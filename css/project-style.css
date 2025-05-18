@@ -1,0 +1,152 @@
+/* === Project Detail Page Styling (Aligned with Main Theme) === */
+
+body {
+  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4ff;
+  color: #1a1a1a;
+  font-size: 18px;
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+header {
+  background: linear-gradient(90deg, #6a8dff, #8d70ff);
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+}
+
+main {
+  padding: 3rem 2rem;
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-detail {
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+  text-align: left;
+  width: 100%;
+}
+
+.project-detail h3 {
+  color: #3832a0;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-detail ul {
+  padding-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.project-detail li {
+  margin-bottom: 0.6rem;
+}
+
+.project-detail p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.project-detail a {
+  display: inline-block;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #4c3aff;
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.project-detail a:hover {
+  background-color: #6a8dff;
+}
+
+a[href="projects.html"] {
+  margin-top: 2rem;
+  color: #4e5aff;
+  font-weight: 500;
+  display: inline-block;
+}
+
+a[href="projects.html"]:hover {
+  color: #2d3ae8;
+  text-decoration: underline;
+}
+
+/* Dark Mode Support */
+body.dark-mode {
+  background-color: #1a1a2e;
+  color: #eee;
+}
+
+body.dark-mode header {
+  background: linear-gradient(90deg, #2a2a72, #4c3aff);
+}
+
+body.dark-mode .project-detail {
+  background-color: #2a2a40;
+  color: #eee;
+  box-shadow: 0 15px 30px rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode a {
+  color: #8aaaff;
+}
+
+body.dark-mode .project-detail a {
+  background-color: #8aaaff;
+  color: #1a1a2e;
+}
+
+body.dark-mode .project-detail a:hover {
+  background-color: #4e5aff;
+  color: #fff;
+}
+
+.project-interface {
+  margin: 4rem auto 5rem;
+  display: flex;
+  justify-content: center;  /* Center horizontally */
+  align-items: center;      /* Center vertically (if container height grows) */
+  width: 100%;
+}
+
+.project-interface img {
+  width: 90vw;              /* Bigger width: 90% of viewport */
+  max-width: 1400px;        /* Slightly bigger max width */
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 16px 32px rgba(0,0,0,0.3);
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.project-interface img:hover {
+  box-shadow: 0 24px 48px rgba(0,0,0,0.5);
+}
+
+/* Dark mode support */
+body.dark-mode .project-interface img {
+  box-shadow: 0 16px 32px rgba(106, 106, 255, 0.4);
+}
+
+body.dark-mode .project-interface img:hover {
+  box-shadow: 0 24px 48px rgba(76, 76, 255, 0.8);
+}
