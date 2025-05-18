@@ -3,7 +3,7 @@
 A responsive, multi-page personal portfolio website to showcase my skills, projects, and contact information.
 
 ## 🔗 Live Site
-[View Portfolio](https://your-deployment-link.com)
+[View Portfolio](https://my-portfolio-omega-one-49.vercel.app/)
 
 ---
 
