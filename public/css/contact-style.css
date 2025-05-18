@@ -202,3 +202,67 @@ body.dark-mode footer {
   color: #999;
   border-top-color: #333;
 }
+
+/* === Responsive Media Queries === */
+
+/* Medium Devices (Tablets, 768px and up) */
+@media (max-width: 1024px) {
+  main {
+    padding: 2rem 1.5rem;
+  }
+
+  .project-detail {
+    padding: 2rem;
+  }
+
+  .project-interface img {
+    width: 95vw;
+    max-width: 1000px;
+  }
+}
+
+/* Small Devices (Phones, less than 768px) */
+@media (max-width: 767px) {
+  header {
+    padding: 1.5rem 1rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  main {
+    padding: 2rem 1rem;
+  }
+
+  .project-detail {
+    padding: 1.5rem;
+    border-radius: 16px;
+  }
+
+  .project-detail h3 {
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+  }
+
+  .project-detail p,
+  .project-detail li {
+    font-size: 1rem;
+  }
+
+  .project-detail a {
+    font-size: 0.95rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .project-interface {
+    margin: 2.5rem auto 3rem;
+    flex-direction: column;
+  }
+
+  .project-interface img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 12px;
+  }
+}
