@@ -5,6 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Product Listing Page</title>
   <link rel="stylesheet" href="css/project-style.css"/>
+
+  <script>
+    if (localStorage.getItem("theme") === "dark") {
+      document.documentElement.classList.add("dark-mode");
+    }
+  </script>
+  
 </head>
 <body>
   <header><h1>Product Listing Page</h1></header>

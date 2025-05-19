@@ -1,7 +1,21 @@
+// Apply saved theme on page load
+if (localStorage.getItem("theme") === "dark") {
+  document.body.classList.add("dark-mode");
+}
+
 // Theme toggle
 document.getElementById("themeToggle").addEventListener("click", () => {
-  document.body.classList.toggle("dark-mode");
+  const body = document.body;
+  body.classList.toggle("dark-mode");
+
+  // Save the preference
+  if (body.classList.contains("dark-mode")) {
+    localStorage.setItem("theme", "dark");
+  } else {
+    localStorage.setItem("theme", "light");
+  }
 });
+
 
 // Highlight current page
 const currentPage = window.location.pathname.split("/").pop();
