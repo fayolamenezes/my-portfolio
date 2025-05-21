@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Recipe Manager Web App</title>
+  <link rel="stylesheet" href="css/project-style.css"/>
+
+  <script>
+    if (localStorage.getItem("theme") === "dark") {
+      document.documentElement.classList.add("dark-mode");
+    }
+  </script>
+</head>
+<body>
+  <header><h1>Recipe Manager Web App</h1></header>
+  <main>
+    <section class="project-detail">
+      <p>A feature-rich web application to manage recipes, plan meals, and generate grocery lists—designed for ease of use and practical daily cooking needs.</p>
+      
+      <h3>Key Features:</h3>
+      <ul>
+        <li>Recipe creation with image uploads and category filtering</li>
+        <li>Live search and edit/delete functionality for recipes</li>
+        <li>Weekly meal planner with dropdown selections</li>
+        <li>Grocery list generation based on planned meals</li>
+      </ul>
+
+      <h3>Technologies Used:</h3>
+      <p>HTML, CSS, JavaScript, LocalStorage, Vercel</p>
+
+      <a href="https://github.com/fayolamenezes/recipe-manager" target="_blank">View on GitHub</a>
+      <a href="https://recipe-manager-rho-cyan.vercel.app/" target="_blank">Live Demo</a>
+    </section>
+
+    <a href="projects.html">← Back to Projects</a>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>

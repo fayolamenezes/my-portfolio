@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Meal Planner Web App</title>
+  <link rel="stylesheet" href="css/project-style.css"/>
+
+  <script>
+    if (localStorage.getItem("theme") === "dark") {
+      document.documentElement.classList.add("dark-mode");
+    }
+  </script>
+</head>
+<body>
+  <header><h1>Meal Planner Web App (React Version)</h1></header>
+  <main>
+    <section class="project-detail">
+      <p>A simple yet effective meal planning application that helps users organize their weekly meals using selected recipes and maintain consistency in their diet.</p>
+      
+      <h3>Key Features:</h3>
+      <ul>
+        <li>Interactive day-wise meal planning interface</li>
+        <li>Dropdown-based recipe selection for each meal</li>
+        <li>Automatic local storage of weekly plans</li>
+        <li>Clean, responsive design for usability</li>
+      </ul>
+
+      <h3>Technologies Used:</h3>
+      <p>React, HTML, CSS, JavaScript, LocalStorage, Vercel</p>
+
+      <a href="https://github.com/fayolamenezes/meal-planner" target="_blank">View on GitHub</a>
+      <a href="https://meal-planner-henna-zeta.vercel.app/" target="_blank">Live Demo</a>
+    </section>
+
+    <a href="projects.html">← Back to Projects</a>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>
